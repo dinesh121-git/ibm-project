@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dinesh | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="stars"></canvas>
+  <div class="meteor-wrapper">
+  <div class="meteor"></div>
+  <div class="meteor"></div>
+  <div class="meteor"></div>
+  <div class="meteor"></div>
+  <div class="meteor"></div>
+  <div class="meteor"></div>
+  <div class="meteor"></div>
+  <div class="meteor"></div>
+  <div class="meteor"></div>
+  <div class="meteor"></div>
+  <div class="meteor"></div>
+  </div>
+
+  <div class="cursor"></div>
+
+  <nav class="navbar">
+    <a href="#home" class="nav-logo"></a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="section home-section">
+
+  <h1>Hello, I'm <span class="name-highlight">Dinesh</span></h1>
+  <h2 class="sub-heading">CSE AIML Student at CBIT</h2>
+
+  <div class="tagline-typing">
+    <span id="typing-text"></span>
+  </div>
+  </section>
+
+
+  <section id="about" class="section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I’m Dinesh, a passionate CSE AIML student at CBIT. I love building things that merge design, AI, and web technologies. Whether it's machine learning models or pixel-perfect web apps, I enjoy solving real-world problems through creative tech.</p>
+      </div>
+      <div class="skills-box">
+        <h3>Skills</h3>
+        <div class="skills-grid">
+          <div class="skill">Python in OOP,DSA,PSP</div>
+          <div class="skill">Machine Learning</div>
+          <div class="skill">Web Apps</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">SQL</div>
+          <div class="skill">Git & GitHub</div>
+          <div class="skill">Data analysis</div>
+          <div class="skill">C-LANG</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Hospital Management GUI</h3>
+        <p>Python Tkinter + SQL app for managing hospital data.</p>
+        <div class="buttons">
+          <a href="#" class="btn">Live Demo</a>
+          <a href="https://github.com/dinesh121-git/hospital-management" class="btn">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Height Predictor</h3>
+        <p>ML model with Streamlit UI and Firebase integration.</p>
+        <div class="buttons">
+          <a href="https://height-predictor-1.onrender.com/" class="btn">Live Demo</a>
+          <a href="https://github.com/dinesh121-git/height-predictor" class="btn">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card wide">
+        <h3>Mini-games (Simon Game)</h3>
+        <p>Interactive browser games built in JS.</p>
+        <div class="buttons">
+          <a href="https://silver-melomakarona-702c6a.netlify.app/" class="btn">Live Demo</a>
+          <a href="https://github.com/dinesh121-git/SIMMONGAME" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="github-card">
+  <a href="https://github.com/dinesh121-git" target="_blank" class="github-link">
+    <h3>🌌 Explore My GitHub</h3>
+    <p>See all my open-source projects, contributions, and experiments in ML and web tech.</p>
+    <span>👉 github.com/dinesh121-git</span>
+  </a>
+</div>
+
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contact-form" class="contact-form">
+      <input type="text" name="from_name" placeholder="Name" required />
+      <input type="email" name="from_email" placeholder="Email" required />
+      <textarea name="message" placeholder="Message" rows="5" required></textarea>
+      <button type="submit" class="btn btn-submit">Send Message</button>
+    </form>
+
+    <a href="resume.pdf" download class="btn btn-resume">Download Resume</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dinesh. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+  (function(){
+    emailjs.init("N8iltQ0eqM1dbKduL"); // Replace with your real public key
+  })();
+  </script>
+
+  
+
+  <script src="scripts.js"></script>
+</body>
+</html>
